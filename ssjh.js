@@ -9,10 +9,5 @@ express()
   .use(express.static(path.join(__dirname, 'public')))
   .set('views', path.join(__dirname, 'views'))
   .set('view engine', 'ejs')
-  .get('/', (req, res) => res.render('main'))
-  .get('/main', (req, res) => { 
-    //res.cookie('lvlRec', JSON.stringify(lvlRec));
-    res.render('main');
-  })
-  .get('/about', (req, res) => res.render('about'))
+  .get('/', (req, res) => res.render('index'))
   .listen(PORT, () => console.log(`Listening on ${ PORT }`))
