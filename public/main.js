@@ -72,7 +72,7 @@ function ready() {
         Cookies.set('timeLimit','36000');
         Cookies.set('scoreTarget','1000');
         menu.setLvlCfg();
-        location.replace("/L1");
+        //location.replace("/L1");
     });
 
 }
