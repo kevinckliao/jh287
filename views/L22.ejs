@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<html manifest="myapp.appcache">
+<head>
+  <%- include ("./partials/header_test.ejs") %>
+</head>
+<body>
+  <!-- **** Hidden Message Elements below-->
+  <%- include ("./partials/body_msg.ejs") %>
+
+  <!-- Shown page below: -->
+  <div class="game-container">
+    <%- include ("./partials/body_counter.ejs") %>
+
+    <!-- Question: -->
+    <div class="container row">
+      <div class="col-md-6 game-info answer-size">
+        <p>You are writing a Python program to validate employee numbers.
+          The employee number must have the format dd-ddd-dddd and consists of 
+          only numbers and dashes.  The program must print True if the format
+          is correct, otherwise print False.
+        </p><script src="https://gist.github.com/kevinckliao/446b4056f961290a118fd1a60004dfe3.js"></script>
+      </div>
+
+      <div class="col-md-6 game-info answer-size">
+        <p>Which of the following is True about this code?</p><br>
+
+        <p>
+        <input type="checkbox" id="choiceA" name="choice" value="A">
+        A: It will throw an error because of the misuse of split() method
+        </p>
+
+        <p>
+        <input type="checkbox" id="choiceB" name="choice" value="B">
+        B: It will throw an error because of the misuse of isDigit() method
+        </p>
+
+        <p>
+        <input type="checkbox" id="choiceC" name="choice" value="C">
+        C: There is no error, but it won't fulfill our requirements.
+        </p>
+
+        <p>
+        <input type="checkbox" id="choiceD" name="choice" value="D">
+        D: No changes are required for this code, and it can fulfill the requirement.
+        </p>
+
+      </div>
+    </div>
+
+    <div class="">
+      <input type="button" name="D" id="btnCheck" value="Check" class="btn btn-lg btn-success btn-space">
+      <!-- hide right answer in 'name' properity -->
+
+      <input type="button" name="L1" id="btnNext" value="Next" class="btn btn-lg btn-warning btn-space">
+      <!-- hide Next-Level in 'name' properity -->
+
+      <input type="button" id="btnHome" value="Home" class="btn btn-lg btn-danger btn-space">
+    </div>
+    
+  </div>
+
+</body>
+</html>

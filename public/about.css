@@ -1,0 +1,49 @@
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  min-height: 100vh;
+  /* cursor: url(Assets/Cursors/Ghost.cur), auto; */
+  font-family: 'Noto Sans TC', sans-serif;
+}
+
+body {
+  margin: 0;
+  background: radial-gradient(#9D5900, #3D2200);
+}
+
+.game-info {
+  color: #FFBB89;
+  font-size: 1.1em;
+}
+
+.game-container {
+  margin: 50px auto;
+  /* display: grid;
+  grid-template-columns: repeat(4, auto);
+  grid-gap: 10px; */
+  justify-content: center;
+  perspective: 500px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.center-container {
+  display: flex;
+  justify-content: center;
+}
+
+.button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  margin: 4px 2px;
+  border-radius: 10%;
+}

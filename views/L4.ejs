@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <%- include ("./partials/header_test.ejs") %>
+</head>
+<body>
+  <!-- **** Hidden Message Elements below-->
+  <%- include ("./partials/body_msg.ejs") %>
+
+  <!-- Shown page below: -->
+  <div class="game-container">
+    <%- include ("./partials/body_counter.ejs") %>
+
+    <!-- Question: -->
+    <div class="container row">
+      <div class="col-md-6 game-info">
+        <p>
+          You work for a company that distributes media for all ages.  You are writing a function
+          that assigns a rating based on a user's age.  The function must meet the following requirements:
+          Anyone 18 years old or older receives a rating of "A". &nbsp;
+          Anyone 13 or older, but younger than 18 receives a rating of "T". &nbsp;
+          Anyone 12 years old or younger receives a rating of "C". &nbsp;
+          If the age is unknown, the rating is set to "C". &nbsp; Which of the following code meets above requirements?
+        </p>
+
+      </div>
+
+      <div class="col-md-6 game-info">
+        <p>What is the Result ?</p><br>
+
+        <input type="checkbox" id="choiceA" name="choice" value="A">
+        <label for="choiceA"> A:</label><br>
+        <script src="https://gist.github.com/kevinckliao/9904c140abfae0b8cadc4bc28c870d0e.js"></script>
+
+        <input type="checkbox" id="choiceB" name="choice" value="B">
+        <label for="choiceA"> B:</label><br>
+        <script src="https://gist.github.com/kevinckliao/c844faa5de07eeec5fbf8542327c574f.js"></script>
+
+        <input type="checkbox" id="choiceC" name="choice" value="C">
+        <label for="choiceA"> C:</label><br>
+        <script src="https://gist.github.com/kevinckliao/abbe2ff7b98fbccb6e3b8ce729c68024.js"></script>
+
+        <input type="checkbox" id="choiceD" name="choice" value="D">
+        <label for="choiceA"> D:</label><br>
+        <script src="https://gist.github.com/kevinckliao/316eb1882f2ac0c3d303ca9bced10e8d.js"></script>
+      </div>
+    </div>
+
+    <div class="">
+      <input type="button" name="A" id="btnCheck" value="Check" class="btn btn-lg btn-success btn-space">
+      <!-- hide right answer in 'name' properity -->
+
+      <input type="button" name="L5" id="btnNext" value="Next" class="btn btn-lg btn-warning btn-space">
+      <!-- hide Next-Level in 'name' properity -->
+
+      <input type="button" id="btnHome" value="Home" class="btn btn-lg btn-danger btn-space">
+    </div>
+    
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <%- include ("./partials/header_test.ejs") %>
+</head>
+<body>
+  <!-- **** Hidden Message Elements below-->
+  <%- include ("./partials/body_msg.ejs") %>
+
+  <!-- Shown page below: -->
+  <div class="game-container">
+    <%- include ("./partials/body_counter.ejs") %>
+
+    <!-- Question: -->
+    <div class="container row">
+      <div class="col-md-6 game-info">
+        <strong>Consider the code: </strong><br>
+          <div class="code-text">
+            <p>
+            #Line-1<br>
+            &nbsp;name=input('Enter Your Name:')<br>
+            &nbsp;&nbsp; return name<br>
+            <br>
+            #Line-2<br>
+            &nbsp; calories=miles*calories_per_mile<br>
+            &nbsp;&nbsp; return calories<br>
+            <br>
+            distance=int(input('How many miles did you bike this week:'))<br>
+            burn_rate = 50<br>
+            biker=get_name()<br>
+            calories_burned=calc_calories(distance,burn_rate)<br>
+            print(biker,'You burned', calories_burned,' calories')
+            </p>
+          </div>
+      </div>
+
+      <div class="col-md-6 game-info">
+        <strong>What is the Result ?</strong><br>
+
+        <p>
+        <input type="checkbox" id="choiceA" name="choice" value="A">
+        A: #Line-1 should be replaced with <br>
+        def get_name():
+        </p>
+
+        <p>
+        <input type="checkbox" id="choiceB" name="choice" value="B">
+        B: #Line-1 should be replaced with def get_name(name):
+        </p>
+
+        <p>
+        <input type="checkbox" id="choiceC" name="choice" value="C">
+        C: #Line-1 should be replaced with def get_name(biker):
+        </p>
+
+        <p>
+        <input type="checkbox" id="choiceD" name="choice" value="D">
+        D: #Line-2 should be replaced with <br>
+        def calc_calories(distance,calories_per_mile):
+        </p>
+
+      </div>
+    </div>
+
+    <div class="">
+      <input type="button" name="AD" id="btnCheck" value="Check" class="btn btn-lg btn-success btn-space">
+      <!-- hide right answer in 'name' properity -->
+
+      <input type="button" name="L8" id="btnNext" value="Next" class="btn btn-lg btn-warning btn-space">
+      <!-- hide Next-Level in 'name' properity -->
+
+      <input type="button" id="btnHome" value="Home" class="btn btn-lg btn-danger btn-space">
+    </div>
+    
+  </div>
+
+</body>
+</html>

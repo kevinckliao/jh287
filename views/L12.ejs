@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <%- include ("./partials/header_test.ejs") %>
+</head>
+<body>
+  <!-- **** Hidden Message Elements below-->
+  <%- include ("./partials/body_msg.ejs") %>
+
+  <!-- Shown page below: -->
+  <div class="game-container">
+    <%- include ("./partials/body_counter.ejs") %>
+
+    <!-- Question: -->
+    <div class="container row">
+      <div class="col-md-6 game-info">
+        <strong>Consider the code: </strong><br>
+        <script src="https://gist.github.com/kevinckliao/d56da38d89820d477bf050980737a1b4.js"></script>
+      </div>
+
+      <div class="col-md-6 game-info answer-size">
+        <strong>To print 10 100 to the console which of the following code we have to take at #Line-1:</strong><br>
+        <br>
+
+        <p>
+        <input type="checkbox" id="choiceA" name="choice" value="A">
+        A: 0,1,1,2,3,5,8,
+        </p>
+
+        <p>
+        <input type="checkbox" id="choiceB" name="choice" value="B">
+        B: 0,0,1,2,3,5,8,
+        </p>
+
+        <p>
+        <input type="checkbox" id="choiceC" name="choice" value="C">
+        C: 0,1,0,2,0,4,0,
+        </p>
+
+        <p>
+        <input type="checkbox" id="choiceD" name="choice" value="D">
+        D: None of these
+        </p>
+
+      </div>
+    </div>
+
+    <div class="">
+      <input type="button" name="A" id="btnCheck" value="Check" class="btn btn-lg btn-success btn-space">
+      <!-- hide right answer in 'name' properity -->
+
+      <input type="button" name="L13" id="btnNext" value="Next" class="btn btn-lg btn-warning btn-space">
+      <!-- hide Next-Level in 'name' properity -->
+
+      <input type="button" id="btnHome" value="Home" class="btn btn-lg btn-danger btn-space">
+    </div>
+    
+  </div>
+
+</body>
+</html>

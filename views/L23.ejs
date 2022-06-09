@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<html manifest="myapp.appcache">
+<head>
+  <%- include ("./partials/header_test.ejs") %>
+</head>
+<body>
+  <!-- **** Hidden Message Elements below-->
+  <%- include ("./partials/body_msg.ejs") %>
+
+  <!-- Shown page below: -->
+  <div class="game-container">
+    <%- include ("./partials/body_counter.ejs") %>
+
+    <!-- Question: -->
+    <div class="container row">
+      <div class="col-md-6 game-info answer-size">
+        <p>You need to calculate the number of years of service and print a congratulatory message.
+          You have written the following code.
+          <script src="https://gist.github.com/kevinckliao/7bfdb3c6f9200ad0b7ff8f2254e7918c.js"></script>
+      </div>
+
+      <div class="col-md-6 game-info answer-size">
+        <p>Which code should you use at line 3 ?</p><br>
+
+        <p class="code-text">
+        <input type="checkbox" id="choiceA" name="choice" value="A">
+        A: print('Congratulation on ' + (int(end)-int(start)) + ' years of service!')
+        </p>
+
+        <p class="code-text">
+        <input type="checkbox" id="choiceB" name="choice" value="B">
+        B: print('Congratulation on ' + str(int(end)-int(start)) + ' years of service!')
+        </p>
+
+        <p class="code-text">
+        <input type="checkbox" id="choiceC" name="choice" value="C">
+        C: print('Congratulation on '+ int(end - start) + ' years of service!')
+        </p>
+
+        <p class="code-text">
+        <input type="checkbox" id="choiceD" name="choice" value="D">
+        D: print('Congratulation on '+ str(end - start) + ' years of service!')
+        </p>
+
+      </div>
+    </div>
+
+    <div class="">
+      <input type="button" name="B" id="btnCheck" value="Check" class="btn btn-lg btn-success btn-space">
+      <!-- hide right answer in 'name' properity -->
+
+      <input type="button" name="L1" id="btnNext" value="Next" class="btn btn-lg btn-warning btn-space">
+      <!-- hide Next-Level in 'name' properity -->
+
+      <input type="button" id="btnHome" value="Home" class="btn btn-lg btn-danger btn-space">
+    </div>
+    
+  </div>
+
+</body>
+</html>

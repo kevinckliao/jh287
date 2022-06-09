@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <%- include ("./partials/header_test.ejs") %>
+</head>
+<body>
+  <!-- **** Hidden Message Elements below-->
+  <%- include ("./partials/body_msg.ejs") %>
+
+  <!-- Shown page below: -->
+  <div class="game-container">
+    <%- include ("./partials/body_counter.ejs") %>
+
+    <!-- Question: -->
+    <div class="container row">
+      <div class="col-md-6 game-info">
+        <strong>Consider the code: </strong><br>
+        <script src="https://gist.github.com/kevinckliao/8fe4a4291a34652c65386a8b3c0d2d86.js"></script>
+      </div>
+
+      <div class="col-md-6 game-info answer-size">
+        <strong>Which of the following code should be inserted to print Hightest Number as 100 and Least Number as 10:</strong><br>
+        <br>
+
+        <p>
+        <input type="checkbox" id="choiceA" name="choice" value="A">
+        A: <script src="https://gist.github.com/kevinckliao/a2c4bcfd8a25f05a9ab3c388a4432750.js"></script>
+        </p>
+
+        <p>
+        <input type="checkbox" id="choiceB" name="choice" value="B">
+        B: <script src="https://gist.github.com/kevinckliao/e159bc3bb0c6c1392b91e5fead72a733.js"></script>
+        </p>
+
+        <p>
+        <input type="checkbox" id="choiceC" name="choice" value="C">
+        C: <script src="https://gist.github.com/kevinckliao/617f7044cf12808962a85892ecb9a4ea.js"></script>
+        </p>
+
+        <p>
+        <input type="checkbox" id="choiceD" name="choice" value="D">
+        D: <script src="https://gist.github.com/kevinckliao/3ed9f6302947127475ca0bf46bd596e1.js"></script>
+        </p>
+
+      </div>
+    </div>
+
+    <div class="">
+      <input type="button" name="B" id="btnCheck" value="Check" class="btn btn-lg btn-success btn-space">
+      <!-- hide right answer in 'name' properity -->
+
+      <input type="button" name="L11" id="btnNext" value="Next" class="btn btn-lg btn-warning btn-space">
+      <!-- hide Next-Level in 'name' properity -->
+
+      <input type="button" id="btnHome" value="Home" class="btn btn-lg btn-danger btn-space">
+    </div>
+    
+  </div>
+
+</body>
+</html>

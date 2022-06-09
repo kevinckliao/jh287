@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Who's Who</title>
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:400,100,300,500">
+        <link rel="stylesheet" href="Assets/login-form/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="Assets/login-form/font-awesome/css/font-awesome.min.css">
+		<link rel="stylesheet" href="Assets/login-form/css/form-elements.css">
+        <link rel="stylesheet" href="Assets/login-form/css/login.css">
+
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+        <!-- Favicon and touch icons
+        <link rel="shortcut icon" href="Assets/login-form/ico/favicon.png">
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="Assets/login-form/ico/apple-touch-icon-144-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="Assets/login-form/ico/apple-touch-icon-114-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="Assets/login-form/ico/apple-touch-icon-72-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" href="Assets/login-form/ico/apple-touch-icon-57-precomposed.png">
+        -->
+        <!-- use our own Favicon-->
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+        <link rel="manifest" href="/site.webmanifest">
+        <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+        <meta name="msapplication-TileColor" content="#da532c">
+        <meta name="theme-color" content="#ffffff">
+    </head>
+
+    <body>
+
+        <!-- Top content -->
+        <div class="top-content">        	
+            <div class="inner-bg">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-8 col-sm-offset-2 text">
+                            <h1><strong>Who's Who @ 504</strong></h1>
+                            <div class="description">
+                            	<p>
+                                    新生504的專屬小遊戲
+                            	</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6 col-sm-offset-3 form-box">
+                        	<div class="form-top">
+                        		<div class="form-top-left">
+                        			<h3>登入說明</h3>
+                            		<p>密碼是導師的LINE名稱全小寫去空格</p>
+                        		</div>
+                        		<div class="form-top-right">
+                        			<i class="fa fa-lock"></i>
+                        		</div>
+                            </div>
+                            <div class="form-bottom">
+                                <form role="form" action="#" method="post" class="login-form" onsubmit="return sendUserInfo();">
+			                    	<div class="form-group">
+			                    		<label class="sr-only" for="form-username">UserNum</label>
+			                        	<input type="text" name="usernum" placeholder="學號..." class="form-username form-control" id="usernum">
+			                        </div>
+			                    	<div class="form-group">
+			                    		<label class="sr-only" for="form-username">UserName</label>
+			                        	<input type="text" name="username" placeholder="玩家暱稱..." class="form-username form-control" id="username">
+			                        </div>
+			                        <div class="form-group">
+			                        	<label class="sr-only" for="form-password">Password</label>
+			                        	<input type="password" name="password" placeholder="密碼..." class="form-password form-control" id="password">
+			                        </div>
+			                        <button type="submit" class="btn">完成</button>
+			                    </form>
+		                    </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Button trigger modal 
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+        Launch demo modal
+        </button>
+        -->
+        
+        <!-- Modal -->
+        <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                </div>
+                <div class="modal-body">
+                ...
+                </div>
+                <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">下ㄧ步</button>
+                <!-- button type="button" class="btn btn-primary">Save changes</    -->
+                </div>
+            </div>
+            </div>
+        </div>
+        
+        <!-- Javascript -->
+        <script src="Assets/login-form/js/jquery-1.11.1.min.js"></script>
+        <script src="Assets/login-form/bootstrap/js/bootstrap.min.js"></script>
+        <script src="Assets/login-form/js/jquery.backstretch.min.js"></script>
+        <script src="Assets/login-form/js/login.js"></script>
+        
+        <!--[if lt IE 10]>
+            <script src="Assets/login-form/js/placeholder.js"></script>
+        <![endif]-->
+
+    </body>
+
+</html>

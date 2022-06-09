@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <%- include ("./partials/header_test.ejs") %>
+</head>
+<body>
+  <!-- **** Hidden Message Elements below-->
+  <%- include ("./partials/body_msg.ejs") %>
+
+  <!-- Shown page below: -->
+  <div class="game-container">
+    <%- include ("./partials/body_counter.ejs") %>
+
+    <!-- Question: -->
+    <div class="container row">
+      <div class="col-md-6 game-info">
+        <strong>Consider the code: </strong><br>
+        <script src="https://gist.github.com/kevinckliao/728f9d6787d14e9ab21499dfe26c3490.js"></script>
+      </div>
+
+      <div class="col-md-6 game-info answer-size">
+        <strong>To print ['chicken','mutton','fish'] to the console, x should be replaced with</strong><br>
+        <br>
+
+        <p>
+        <input type="checkbox" id="choiceA" name="choice" value="A">
+        A: a,lst=[]
+        </p>
+
+        <p>
+        <input type="checkbox" id="choiceB" name="choice" value="B">
+        B: a,lst=()
+        </p>
+
+        <p>
+        <input type="checkbox" id="choiceC" name="choice" value="C">
+        C: a,lst={}
+        </p>
+
+        <p>
+        <input type="checkbox" id="choiceD" name="choice" value="D">
+        D: a, lst=None
+        </p>
+
+      </div>
+    </div>
+
+    <div class="">
+      <input type="button" name="A" id="btnCheck" value="Check" class="btn btn-lg btn-success btn-space">
+      <!-- hide right answer in 'name' properity -->
+
+      <input type="button" name="L1" id="btnNext" value="Next" class="btn btn-lg btn-warning btn-space">
+      <!-- hide Next-Level in 'name' properity -->
+
+      <input type="button" id="btnHome" value="Home" class="btn btn-lg btn-danger btn-space">
+    </div>
+    
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<html manifest="myapp.appcache">
+<head>
+  <%- include ("./partials/header_test.ejs") %>
+</head>
+<body>
+  <!-- **** Hidden Message Elements below-->
+  <%- include ("./partials/body_msg.ejs") %>
+
+  <!-- Shown page below: -->
+  <div class="game-container">
+    <%- include ("./partials/body_counter.ejs") %>
+
+    <!-- Question: -->
+    <div class="container row">
+      <div class="col-md-6 game-info answer-size">
+        <p>You are coding a math utility by using python: <br>
+          1. You are writing a function to compute roots<br>
+          2. The function must meet the following requirements<br>
+          3. If a is non-negative, return a**(1/b)<br>
+          4. If a is negative and even, return "Result is an imaginary number"<br>
+          5. If a is negative and odd, return -(-a)**(1/b)<br><br>
+        </p>
+      </div>
+
+      <div class="col-md-6 game-info answer-size">
+        <p>Which of the following root function should be used?</p><br>
+
+        <p>
+        <input type="checkbox" id="choiceA" name="choice" value="A">
+        A: <script src="https://gist.github.com/kevinckliao/d7841dca9e41d8718c968b161ce0a805.js"></script>
+        </p>
+
+        <p>
+        <input type="checkbox" id="choiceB" name="choice" value="B">
+        B: <script src="https://gist.github.com/kevinckliao/b7d30276cc4d0f48900b40129f521e1b.js"></script>
+        </p>
+
+        <p>
+        <input type="checkbox" id="choiceC" name="choice" value="C">
+        C: <script src="https://gist.github.com/kevinckliao/796982ab55bbb35f445050bd6424c7c2.js"></script>
+        </p>
+
+        <p>
+        <input type="checkbox" id="choiceD" name="choice" value="D">
+        D: <script src="https://gist.github.com/kevinckliao/2e5c61616162aab017adb28ae831a590.js"></script>
+        </p>
+
+      </div>
+    </div>
+
+    <div class="">
+      <input type="button" name="A" id="btnCheck" value="Check" class="btn btn-lg btn-success btn-space">
+      <!-- hide right answer in 'name' properity -->
+
+      <input type="button" name="L1" id="btnNext" value="Next" class="btn btn-lg btn-warning btn-space">
+      <!-- hide Next-Level in 'name' properity -->
+
+      <input type="button" id="btnHome" value="Home" class="btn btn-lg btn-danger btn-space">
+    </div>
+    
+  </div>
+
+</body>
+</html>

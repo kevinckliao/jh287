@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <%- include ("./partials/header_test.ejs") %>
+</head>
+<body>
+  <!-- **** Hidden Message Elements below-->
+  <%- include ("./partials/body_msg.ejs") %>
+
+  <!-- Shown page below: -->
+  <div class="game-container">
+    <%- include ("./partials/body_counter.ejs") %>
+
+    <!-- Question: -->
+    <div class="container row">
+      <div class="col-md-6 game-info">
+        <p>We are developing a math function to find area for the given circle.&nbsp;
+          If r is the radius then area is pi*r**2.&nbsp; 
+          Which of the following is a valid function for this requirement?
+        </p><br><br>
+        
+      </div>
+
+      <div class="col-md-6 game-info answer-size">
+        <strong>Options are:</strong><br>
+
+        <p>
+        <input type="checkbox" id="choiceA" name="choice" value="A">
+        A:
+        <script src="https://gist.github.com/kevinckliao/0179640d86340e1e55117fa30e4758b2.js"></script>
+        </p>
+
+        <p>
+        <input type="checkbox" id="choiceB" name="choice" value="B">
+        B:
+        <script src="https://gist.github.com/kevinckliao/2632ea1ab3f69514c76514f28b77a9d9.js"></script>
+        </p>
+
+        <p>
+        <input type="checkbox" id="choiceC" name="choice" value="C">
+        C:
+        <script src="https://gist.github.com/kevinckliao/86ab140eca04862146d109b4555d8e10.js"></script>
+        </p>
+
+        <p>
+        <input type="checkbox" id="choiceD" name="choice" value="D">
+        D: None of these
+        </p>
+
+
+      </div>
+    </div>
+
+    <div class="">
+      <input type="button" name="C" id="btnCheck" value="Check" class="btn btn-lg btn-success btn-space">
+      <!-- hide right answer in 'name' properity -->
+
+      <input type="button" name="L7" id="btnNext" value="Next" class="btn btn-lg btn-warning btn-space">
+      <!-- hide Next-Level in 'name' properity -->
+
+      <input type="button" id="btnHome" value="Home" class="btn btn-lg btn-danger btn-space">
+    </div>
+    
+  </div>
+
+</body>
+</html>

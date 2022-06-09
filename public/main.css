@@ -1,0 +1,112 @@
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  min-height: 100vh;
+  font-family: 'Hi Melody', cursive;
+}
+
+body {
+  margin: 0;
+  background: radial-gradient(#9D5900, #3D2200);
+}
+
+.menu-btn {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  border-radius: 10%;
+}
+
+.btn-replay-exit {
+  background-color: #b9780f;
+  border: none;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  border-radius: 10%;
+}
+
+.num-selector {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 0px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 0.4em;
+  margin: 4px 2px;
+  border-radius: 10%;
+}
+
+.login-label {
+  font-size: 0.6em;
+  padding: 4px;
+}
+
+.menu-btn.fade {
+  opacity: 0.4;
+}
+
+.page-title {
+  color: #FF6D00;
+  font-family: 'Ruge Boogie', cursive;
+  font-weight: normal;
+  text-align: center;
+  font-size: 6em;
+}
+
+.game-info-container {
+  grid-column: 1 / -1;
+  display: flex;
+  justify-content: space-between;
+}
+
+.game-info {
+  margin: auto;
+  color: #FFBB89;
+  font-size: 4em;
+  text-align: center;
+}
+
+.game-container {
+  margin: 50px auto;
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  grid-gap: 10px;
+  justify-content: center;
+  perspective: 500px;
+}
+
+.overlay-text-small {
+  font-size: .8em;
+}
+
+.score {
+  text-align: right;
+}
+
+.score-board {
+  font-family: 'Noto Sans TC', sans-serif;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  font-size: .3em;
+  table-layout: auto;
+  border-collapse: collapse;
+  margin: auto;
+  width: 90%;
+}
