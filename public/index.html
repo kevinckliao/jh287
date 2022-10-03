@@ -1,250 +1,182 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" /> -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
-      integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ="
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="css/lightbox.min.css" />
-    <link rel="stylesheet" href="css/utilities.css" />
-    <link rel="stylesheet" href="css/style.css" />
-    <title>三星製造未來假日學校</title>
-    <!-- Favicon setup BEGIN -->
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
-    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
-    <meta name="msapplication-TileColor" content="#ffc40d">
-    <meta name="theme-color" content="#ffffff">
-    <!-- Favicon setup END -->
-  </head>
-  <body id="home">
-    <header class="hero">
-      <div id="navbar" class="navbar top">
-        <h1 class="logo">
-          <span class="text-primary"><i class="fas fa-book-open"></i> 三星製造</span
-          >未來假日學校
-        </h1>
-        <nav>
-          <ul>
-            <li><a href="#home">主頁</a></li>
-            <li><a href="#about">關於</a></li>
-            <li><a href="blog.html">公告</a></li>
-            <li><a href="#contact">聯絡</a></li>
-          </ul>
-        </nav>
-      </div>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>jh287</title>
+  <!-- for Favicon-->
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+  <!-- for Google Font -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400&display=swap" rel="stylesheet">  
 
-      <div class="content">
-        <h1>對未來的期許</h1>
-        <p>我們教導未來職業的需求</p>
-        <a href="#about" class="btn"
-          ><i class="fas fa-chevron-right"></i>讀更多</a
-        >
-      </div>
-    </header>
+  <style>
+    body {
+      font-family: 'Noto Sans TC', sans-serif;
+      color:rgb(40, 40, 40);
+    }
 
-    <main>
-      <!-- About: Icons -->
-      <section id="about" class="icons bg-light about">
-        <div class="flex-items">
-          <div>
-            <i class="fas fa-university fa-2x"></i>
-            <div>
-              <h3>學習</h3>
-              <p>
-                這裡可以學到跟實際工作相關的事務
-              </p>
-            </div>
-          </div>
-          <div>
-            <i class="fas fa-user fa-2x"></i>
-            <div>
-              <h3>高級講師</h3>
-              <p>
-                會請許多專業的講師來教學
-              </p>
-            </div>
-          </div>
-          <div>
-            <i class="fas fa-pencil-alt fa-2x"></i>
-            <div>
-              <h3>不只有講課</h3>
-              <p>
-                課程內容有許多關於實際作的項目
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
+    table {
+    border-collapse: collapse;
+    width: 95%;
+    }
 
-      <!-- Cases -->
-      <section id="blog_head" class="flex-grid section-padding">
-        <header class="section-header blog">
-          <h1>公告</h1>
-        </header>
-      </section>
-      <!-- Blog -->
-      <section id="blog" class="blog flex-columns flex-reverse">
-        <div class="row">
-          <div class="column">
-            <div class="column-1">
-              <img src="images/blog/blog1/s1.jpg" alt="" />
-            </div>
-          </div>
-          <div class="column">
-            <div class="column-2 bg-secondary">
-              <h2>公告 1</h2>
-              <p>
-                為了給學生一個值得回憶的畢業典禮，假日學校的老師們受邀到學校佈置畢業展牆面，共同創作，留下“今年的我們”，為2022年畢業的大家，青春定格。
-              </p>
-              <a href="blog.html" class="btn btn-outline">
-                <i class="fas fa-chevron"></i>
-                讀更多
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
+    td, th {
+    border: 1px solid #eeae22c8;
+    text-align: left;
+    padding: 8px;
+    }
 
-      <article id="blog2" class="flex-columns ">
-        <div class="row">
-          <div class="column">
-            <div class="column-1">
-              <img src="images/blog/blog2/s.jpg" alt="" />
-            </div>
-          </div>
-          <div class="column">
-            <div class="column-2 bg-dark">
-              <h2>公告 2</h2>
-              <p>
-                👆本競賽是以四次體驗創業課程做為競賽模式，讓學生在線上自主創業，將邀請業師帶領，從無到有，體驗一次完整的少年創業。
-                <br>👆四週的課程內容
-                <br>1.線上商店
-                <br>2.境內物流
-                <br>3.智慧商業模式
-                <br>4.智在家鄉實戰
-                <br>完成一次線上創業體驗
-                <br>三星製造創業實戰比賽6/4.6/11.6/18.6/25      
-                <br>連結點：<a id="aa" href="https://meet.google.com/tso-gdih-psb" target="_blank">https://meet.google.com/tso-gdih-psb</a> (Tmail登入)
-              </p>
-              <a href="post2.html" class="btn btn-light">
-                <i class="fas fa-chevron"></i>
-                讀更多
-              </a>
-            </div>
-          </div>
-        </div>
-      </article>
+    tr:nth-child(even) {
+    background-color: #eeae22c8;
+    }
 
-      <!-- Team -->
-      <section id="team" class="team section-padding">
-        <header class="section-header">
-          <h2>專業導師</h2>
-        </header>
-        <div class="flex-items teams">
-          <div>
-            <img src="images/team/person2.jpg" alt="" />
-            <h4>張煇志</h4>
-            <p>校長</p>
-          </div>
-          <div>
-            <img src="images/team/person1.jpg" alt="" />
-            <h4>林作賢</h4>
-            <p>講師</p>
-          </div>
-          
-        </div>
-      </section>
+    .marker-flash {
+    background-color: red;
+    animation-name: marker-keyframe;
+    animation-duration: 2s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    }
 
-      <!-- Contact -->
-      <section id="contact" class="contact flex-columns">
-        <div class="row">
-          <div class="column">
-            <div class="column-1">
-              <img src="images/home/contact.jpg" alt="" />
-            </div>
-          </div>
-          <div class="column">
-            <div class="column-2 bg-light">
-              <h2>聯絡</h2>
-              <!-- <form action="" class="callback-form">
-                <div class="form-control">
-                  <label for="name"></label>
-                  <input type="text"name="name"placeholder="Enter name">
-                </div>
-                <div class="form-control">
-                  <label for="email"></label>
-                  <input type="email"name="email"id="email"placeholder="Enter email">
-                </div>
-                <div class="form-control">
-                  <label for="phone"></label>
-                  <input type="text"name="phone"id="phone"placeholder="Enter phone">
-                </div>
-                <input type="submit" value="Send" id="submit" class="btn">
-              </form> -->
-              <p></p>
-              <a href="https://forms.gle/mBfv8D5dst8EXo9x7" class="btn"  target="_blank">填表單</a>
-            </div>
-          </div>
-        </div>
-      </section>
-    </main>
+    @keyframes marker-keyframe {
+    from {background-color: rgb(169, 13, 13); color:white;}
+    to {background-color:white; color: black;}
+    }
 
-    <footer class="footer bg-dark">
-      <div class="social">
-        <a href="https://www.facebook.com/made.in.ssjh/" target="_blank"><i class="fab fa-facebook fa-2x"></i></a>
-      </div>
-      <p>Copyright &copy; 2020 - Made in ssjh</p>
-    </footer>
+    a:link {
+      text-decoration: none;
+      color:#3c3c3c;
+    }
 
-    <script
-      src="https://code.jquery.com/jquery-3.5.0.min.js"
-      integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ="
-      crossorigin="anonymous"
-    ></script>
-    <script src="js/lightbox.min.js"></script>
-    <script>
-      const navbar = document.getElementById('navbar');
-      let scrolled = false;
+    a:visited {
+      text-decoration: none;
+      color:#3c3c3c;
+    }
 
-      window.onscroll = function () {
-        if (window.pageYOffset > 100) {
-          navbar.classList.remove('top');
-          if (!scrolled) {
-            navbar.style.transform = 'translateY(-70px)';
-          }
-          setTimeout(function () {
-            navbar.style.transform = 'translateY(0)';
-            scrolled = true;
-          }, 200);
-        } else {
-          navbar.classList.add('top');
-          scrolled = false;
-        }
-      };
+    a:hover {
+      text-decoration: underline;
+      color:#3c3c3c;
+    }
 
-      // Smooth Scrolling
-      $('#navbar a, .btn').on('click', function (e) {
-        if (this.hash !== '') {
-          e.preventDefault();
+    a:active {
+      text-decoration: underline;
+      color:#3c3c3c;
+    }
 
-          const hash = this.hash;
+  </style>
+</head>
 
-          $('html, body').animate(
-            {
-              scrollTop: $(hash).offset().top - 100,
-            },
-            800
-          );
-        }
-      });
-    </script>
-  </body>
+<div>
+<span>
+    <img src="Logo504L.png" alt="504Logo" width="50" height="50" style="float: left; border-radius: 10px; margin-right: 15px; ">
+    <h2>師大附中 國287 課表</span></h2>
+</span>
+
+<h4 id="weekmsg" style="background-color: rgb(169, 13, 13); color:white; padding-left: 5px; "></h4>
+<h3 style="padding-left: 5px;">視訊連結： <span style="color:rgb(111, 111, 111);" >(待公佈後設定)</span></h3> 
+<table>
+  <tr>
+    <th>時間</th>
+    <th>ㄧ</th>
+    <th>二</th>
+    <th>三</th>
+    <th>四</th>
+    <th>五</th>
+  </tr>
+
+  <!-- Single Week, ROW 1 -->
+  <tr>
+    <th>[1] 8:10 - 8:55</th>
+    <!-- <td> <a href="" target="_blank">歷史</a> </td> -->
+    <td> <a href="">歷史</a> </td>
+    <td> <a href="">生物</a> </td>
+    <td> <a href="">體育</a> </td>
+    <td> <a href="">音樂</a> </td>
+    <td> <a href="">數學</a> </td>
+  </tr>
+
+  <!-- Single Week, ROW 2 -->
+  <tr>
+    <th>[2] 9:10 - 9:55</th>
+    <td> <a href="">班級活動</a> </td>
+    <td> <a href="">資訊</a> </td>
+    <td> <a href="">數學</a> </td>
+    <td> <a href="">國文</a> </td>
+    <td> <a href="">國文</a> </td>
+  </tr>
+
+  <!-- Single Week, ROW 3 -->
+  <tr>
+    <th>[3] 10:10 - 10:55</th>
+    <td> <a href="">國文</a> </td>
+    <td> <a href="">本土</a> </td>
+    <td> <a href="">國文</a> </td>
+    <td> <a href="">生物</a> </td>
+    <td> <a href="">英文</a> </td>
+</tr>
+
+<!-- Single Week, ROW 4 -->
+<tr>
+  <th>[4] 11:05 - 11:50</th>
+    <td> <a href="">英文</a> </td>
+    <td> <a href="">國文</a> </td>
+    <td> <a href="">生物</a> </td>
+    <td> <a href="">生活科技</a> </td>
+    <td> <a href="">社團</a> </td>
+</tr>
+
+<!-- Single Week, ROW 5 -->
+<tr>
+    <th>[5] 13:10 - 13:55</th>
+    <td> <a href="" target="">地理</a></td>
+    <td> <a href="" target="">表演藝術</a></td>
+    <td> <a href="" target="">健教</a></td>
+    <td> <a href="" target="">數學</a> </td>
+    <td> <a href="" target="">附堡小田園</a> </td>
+  </tr>
+
+  <!-- Single Week, ROW 6 -->
+  <tr>
+  <th>[6] 14:10 - 14:55</th>
+  <td> <a href="" target="">體育</a></td>
+  <td> <a href="" target="">數學</a></td>
+  <td> <a href="" target="">公民</a></td>
+  <td> <a href="" target="">輔導</a> </td>
+  <td> <a href="" target="">童軍</a> </td>
+</tr>
+
+<!-- Single Week, ROW 7 -->
+<tr>
+  <th>[7] 15:10 - 16:00</th>
+  <td> <a href="" target="">視覺藝術</a></td>
+  <td> <a href="" target="">英文</a></td>
+  <td> <a href="" target="">家政</a></td>
+  <td> <a href="" target="">地圖密碼</a> </td>
+  <td> <a href="" target="">行腳台灣</a> </td>
+</tr>
+</table>
+
+<br>
+
+<h3>作業連結：<span style="color:rgb(111, 111, 111);" >(已設定)</span></h3>
+<div style="font-size: 1.2rem;">
+&nbsp;
+  <a href="https://www.facebook.com/287%E7%8F%AD%E8%81%AF%E7%B5%A1%E6%9C%AC-106899728788077/" target="_blank">班級聯絡本</a> &nbsp;
+  <a href="https://classroom.google.com/" target="_blank">Google教室</a> &nbsp;
+  <a href="https://jr.hs.ntnu.edu.tw/" target="_blank">國中部官網</a> &nbsp;
+</div>
+
+<br>
+<p style="color:rgb(111, 111, 111); font-size: 0.6rem; text-align: center;"> Update: 2022-10-03 20:08 &nbsp;&nbsp;  悠行爸爸</p>
+<script src="main.js"></script>
+
+</body>
 </html>
