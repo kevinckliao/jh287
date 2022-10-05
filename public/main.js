@@ -23,7 +23,12 @@ msgWeek += dateNow.toLocaleDateString().split('/').slice(-2,-1) + '/' +
 //msgWeek += '  &nbsp; (' + dateNow.toLocaleDateString();
 
 msgWeek += ' 周' + weekdayStr[dateNow.getDay()] + '&nbsp;&nbsp;';
-msgWeek += '  第 ' + weekNo + ' 周';
+msgWeek += '  第 ' + weekNo + ' 周' + '&nbsp;&nbsp;';
+
+var progress = 0;
+progress = Math.round(weekNo / 21 * 100);
+msgWeek += '  已進行 ' + progress + ' %';
+
 
 
 //console.log(msgWeek);
