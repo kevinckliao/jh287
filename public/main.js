@@ -13,7 +13,7 @@ const dateNow = new Date();
 const weekdayStr = [ '日','ㄧ','二','三','四','五','六' ];
 
 // assembly display string
-var msgWeek = '今天是 ' + '&nbsp;&nbsp;';
+var msgWeek = ' 今天 ' + '&nbsp;&nbsp;';
 // if ((weekNo % 2) == 0) {  msgWeek += " 雙周"; weekType = 1;} 
 // else { msgWeek += " 單周"; weekType = 0;};
 
@@ -22,12 +22,12 @@ msgWeek += dateNow.toLocaleDateString().split('/').slice(-2,-1) + '/' +
 
 //msgWeek += '  &nbsp; (' + dateNow.toLocaleDateString();
 
-msgWeek += ' 周' + weekdayStr[dateNow.getDay()] + '&nbsp;&nbsp;';
+msgWeek += '周' + weekdayStr[dateNow.getDay()] + '&nbsp;&nbsp;';
 msgWeek += '  第 ' + weekNo + ' 周' + '&nbsp;&nbsp;';
 
 var progress = 0;
 progress = Math.round(weekNo / 21 * 100);
-msgWeek += '  已進行 ' + progress + ' %';
+msgWeek += '  進度 ' + progress + ' %';
 
 
 
