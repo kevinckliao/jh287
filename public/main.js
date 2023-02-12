@@ -53,11 +53,11 @@ function markDay (weekType, dayNum) {
 if (dateNow.getDay() >= 1 && dateNow.getDay() <=5) {
   markDay(weekType, dateNow.getDay());
 } else {
-  markDay(weekType, 1);
-  markDay(weekType, 2);
-  markDay(weekType, 3);
-  markDay(weekType, 4);
-  markDay(weekType, 5);
+  // markDay(weekType, 1);
+  // markDay(weekType, 2);
+  // markDay(weekType, 3);
+  // markDay(weekType, 4);
+  // markDay(weekType, 5);
 }
 
 
