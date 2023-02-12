@@ -1,6 +1,6 @@
 // Start date of 台灣 國小 109學年度 下學期 第ㄧ周 : 2021-02-21
 //var dateStart = new Date("2021-02-21T00:00:00.000+08:00"); //109學年度 下學期 第ㄧ周 : 2021-02-21
-var dateStart = new Date("2022-08-28T00:00:00.000+08:00"); //111下 第ㄧ個周日
+var dateStart = new Date("2023-02-12T00:00:00.000+08:00"); //111下 第ㄧ個周日
 
 //count time diff, calculate week# for even/odd weeks
 var msecStart = dateStart.getTime();
