@@ -26,7 +26,7 @@ msgWeek += '周' + weekdayStr[dateNow.getDay()] + '&nbsp;&nbsp;';
 msgWeek += '  第 ' + weekNo + ' 周' + '&nbsp;&nbsp;';
 
 var progress = 0;
-progress = Math.round(weekNo / 21 * 100);
+progress = Math.round((weekNo - 1) / 21 * 100);
 msgWeek += '  進度 ' + progress + ' %';
 
 
